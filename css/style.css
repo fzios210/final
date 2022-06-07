@@ -7,10 +7,6 @@ body {
     font-size: 20px;
     font-family: 'TanukiMagic', '華康粗圓體', '微軟正黑體';
     text-align: center;
-    /* background-image: url(../img/main.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain; */
     color: #FFF;
     background-color: #81C4E2;
 }
@@ -36,7 +32,7 @@ body {
 
 }
 
-.navbar-collapse{
+.navbar-collapse {
     background-color: #5a8bbf7e;
 }
 
@@ -64,6 +60,7 @@ li {
 
 a {
     color: #FFF;
+    text-decoration: none;
 }
 
 a:hover .nav-link:hover {
@@ -72,18 +69,29 @@ a:hover .nav-link:hover {
     text-decoration: none;
 }
 
-
 main {
     position: relative;
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.main-pic{
-    width: 100%;
-    background-image: url(../img/main.png);
+.homepage {
+    background-image: url(../img/main.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
+}
+
+.enter {
+    width: 100%;
+    margin-top: -600px;
+}
+
+.e-btn {
+    transform: rotate(20deg);
 }
 
 footer {
@@ -101,10 +109,108 @@ footer {
     bottom: 0;
 }
 
-.ft-text{
+.ft-text {
     margin-left: 20px;
     font-size: 16px;
     margin-bottom: 0;
+}
+
+/* course */
+
+.course {
+    background-image: url(../img/main-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+.main-type {
+    width: 100%;
+    height: 150px;
+}
+
+.B-title {
+    height: 100%;
+}
+
+.M-title {
+    height: 120px;
+}
+
+.P-title {
+    height: 100%;
+}
+
+.space {
+    height: 100px;
+}
+
+.course-list {
+    width: 100%;
+    height: 150px;
+    display: flex;
+
+}
+
+.L-btn {
+    background-image: url(../img/L-btn.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.L-text {
+    color: #5A8BBF;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    border-right: 1px solid #5A8BBF;
+}
+
+.L-text:hover {
+    color: #5A8BBF;
+    text-decoration: none;
+}
+
+.R-btn {
+    background-image: url(../img/R-btn.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.R-text {
+    color: #E07777;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    padding-right: 20px;
+    border-right: 1px solid #E07777;
+}
+
+.R-text:hover {
+    color: #E07777;
+    text-decoration: none;
+}
+
+.feedback-row {
+    width: 100%;
+    height: 100px;
+}
+
+.feedback {
+    height: 40%;
 }
 
 /* comment */
