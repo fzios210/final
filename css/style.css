@@ -61,7 +61,6 @@ a:hover {
 }
 
 .dropdown-item:visited {
-    color: white;
     background-color: rgba(81, 153, 187, 0.8);
 }
 
@@ -142,7 +141,7 @@ footer {
     background-size: contain;
 }
 
-.dropdown-img {
+/* .dropdown-img {
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -175,14 +174,27 @@ footer {
 
 .course-li:hover {
     background-color: rgba(255, 255, 255, 0.1);
+} */
+
+.cb-a{
+    color: #FFF;
 }
 
 .cb-a:hover {
     color: rgb(37, 79, 124);
 }
 
+.cm-a {
+    color: rgb(87, 133, 181);
+}
+
 .cm-a:hover {
-    color: rgb(87,133,181);
+    background-color: rgb(160, 144, 171);
+    color: #FFF;
+}
+
+.cp-a{
+    color: #FFF;
 }
 
 .cp-a:hover {
@@ -195,16 +207,66 @@ footer {
     height: 150px;
 }
 
+.B-btn {    
+    background-image: url(../img/B-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .B-title {
-    height: 100%;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.B-title:hover {
+    color: #FFF;
+}
+
+.M-btn {
+    height: 100px;
+    background-image: url(../img/M-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .M-title {
-    height: 120px;
+    font-size: 30px;
+    color: rgb(87, 133, 181);
+}
+
+.M-title:hover {
+    color: rgb(87, 133, 181);
+}
+
+.m-bg {
+    background-color: rgb(225, 217, 227, 0.6);
+}
+
+.P-btn {
+    background-image: url(../img/P-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .P-title {
-    height: 100%;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.P-title:hover{
+    color: #FFF;
 }
 
 .space {
@@ -263,7 +325,7 @@ footer {
     text-decoration: none;
 }
 
-.p-bg{
+.p-bg {
     background-color: rgba(255, 183, 183, 0.8);
 }
 
