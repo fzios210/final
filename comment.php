@@ -99,12 +99,41 @@ if (isset($_POST['decide'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>討論區</title>
+    <title>共榮共好的臺灣新聚落</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap-4.3.1.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form id="paper" method="post" action="">
+<nav class="nav navbar  navbar-expand-xl navbar-dark">
+            <a href="index.html"><img src="img/logo_w.png" alt="計畫LOGO" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link" href="index.html">緣起</a></li>
+                    <li><a class="nav-link" href="course.html">成果聯展</a></li>
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">認識多元文化與接納</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item cb-a" href="#" target="_blank">《巷弄裡的家鄉》文化地景導覽系列-台北的小菲律賓</a>
+                            <a class="dropdown-item cb-a" href="#" target="_blank">介入的旁觀者以寫作發問</a>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="#">新住民與性別平權</a></li>
+                    <li><a class="nav-link" href="#">社群共讀</a></li>
+                    <li><a class="nav-link" href="#">成果影片</a></li>
+                    <li><a class="nav-link" href="comment.php">意見回饋</a></li>
+                    <li><a class="nav-link" href="http://gec-project.aeust.edu.tw/ge_web/index.html"
+                            target="_blank">計畫網頁</a></li>
+                </ul>
+            </div>
+        </nav>
+    <div class="contain">
+    <form id="paper" method="post" action="" style="padding-top:150px;">
         <input type="hidden" id="decide" name="decide" value="<?php echo $_SESSION['decide']; ?>">
 
 
@@ -158,7 +187,7 @@ if (isset($_POST['decide'])) {
                     $ip = $row["ip"];
                     $ft_name = mb_substr($name, 0, 1, "utf8");  /* 姓名第一個字 */
                     echo "
-                    <li data-reid='$comment_id' data-stdid='$stu_id'>
+                    <li class='comment-li' data-reid='$comment_id' data-stdid='$stu_id'>
                         <div class='comment-avatar'><span>$ft_name</span></div>
                         <div class='comment-right'>
                             <div class='comment-r-info'>                                
@@ -189,7 +218,7 @@ if (isset($_POST['decide'])) {
                             $ft_name = mb_substr($name, 0, 1, "utf8"); /* 姓名第一個字 */
                             echo " <div class='tw-comments-2' data-stdid='$stu_id'>
                                             <ul class='comment-list'>
-                                                <li data-level='4' >
+                                                <li data-level='4' style='width:80%;'>
                                                     <div class='comment-avatar'><span>$ft_name</span></div>
                                                     <div class='comment-right'>
                                                         <div class='comment-r-info'>
@@ -198,8 +227,7 @@ if (isset($_POST['decide'])) {
                                                             <span class='comment-reply-time'>$create_at</span>
                                                         </div>
                                                         <div class='comment-r-content'>
-                                                            <p>$content
-                                                            </p>
+                                                            <p style='margin-left:55px;'>$content</p>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -215,7 +243,7 @@ if (isset($_POST['decide'])) {
                  //echo "0 結果";
             }
             ?>
-    
+    </div>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap-4.3.1.js"></script>
     <script src="js/scripts.js"></script>

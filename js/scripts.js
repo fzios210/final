@@ -24,7 +24,7 @@ function TopicRe(e) {
         '<input type="hidden" name="decide" value="' + id + '">' +
         '<div class="topic-respond-info">' +
         '<span>' +
-        '<input type="text" name="std_id" class="form-control" placeholder="學號" maxlength="9" required/>' +
+        '<input type="text" name="std_id" class="form-control" placeholder="單位名稱" maxlength="9" required/>' +
         '</span>' +
         '<span>' +
         '<input type="text" name="name" class="form-control" placeholder="姓名" required/>' +

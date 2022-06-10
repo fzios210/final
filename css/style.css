@@ -99,15 +99,20 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
+    position: relative;
 }
 
 .enter {
     width: 100%;
-    margin-top: -600px;
+    position: absolute;
+    top: 85px;
 }
 
 .e-btn {
     transform: rotate(20deg);
+    min-width: 135px;
+    width: 12%;
+
 }
 
 footer {
@@ -115,7 +120,7 @@ footer {
     background-color: #81C4E2;
     width: 100%;
     height: 70px;
-    font-size: 10px;
+    font-size: 14px;
     z-index: 100;
     text-align: left;
     color: #FFF;
@@ -128,8 +133,14 @@ footer {
 
 .ft-text {
     margin-left: 20px;
-    font-size: 14px;
     margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .homepage {
+        background-size: cover;
+        background-position: 62% top;
+    }
 }
 
 /* course */
@@ -139,6 +150,12 @@ footer {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
+}
+
+@media (max-width: 1200px) {
+    .course {
+        background-size: cover;
+    }
 }
 
 .cb-a {
@@ -184,7 +201,7 @@ footer {
 
 .B-title {
     padding-bottom: 20px;
-    font-size: 40px;
+    font-size: 2.2vw;
 }
 
 .B-title:hover {
@@ -203,7 +220,7 @@ footer {
 }
 
 .M-title {
-    font-size: 30px;
+    font-size: 1.6vw;
     color: rgb(87, 133, 181);
 }
 
@@ -227,7 +244,7 @@ footer {
 
 .P-title {
     padding-bottom: 20px;
-    font-size: 40px;
+    font-size: 2.2vw;
 }
 
 .P-title:hover {
@@ -256,10 +273,10 @@ footer {
 
 .L-text {
     color: #5A8BBF;
-    padding-right: 20px;
+    padding: 0px 10px;
     margin-bottom: 0px;
     border-right: 1px solid #5A8BBF;
-    font-size: 24px;
+    font-size: 1.3vw;
 }
 
 .L-text:hover {
@@ -275,7 +292,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 1.3vw;
 }
 
 .R-text {
@@ -303,7 +320,89 @@ footer {
     height: 30%;
 }
 
+.course-phone {
+    display: none;
+}
+
+/* 手機版 */
+@media (max-width:768px) {
+    .dropdown-menu {
+        font-size: 2.5vw;
+    }
+
+    .course {
+        display: none;
+    }
+
+    footer {
+        height: 100px;
+        font-size: 12px;
+    }
+
+    .course-phone {
+        display: block;
+        background-image: url(../img/main-03.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        padding: 150px 0;
+        font-size: 20px;
+    }
+
+    .M-title {
+        font-size: 30px;
+    }
+
+    .B-btn {
+        margin: 50px 0;
+    }
+
+    .B-title {
+        font-size: 30px;
+        padding: 25px 25px 35px 25px;
+    }
+
+    .L-text {
+        font-size: 3.5vw;
+        padding: 0 20px;
+    }
+
+    .P-btn {
+        margin: 50px 0;
+    }
+
+    .P-title {
+        font-size: 30px;
+        padding: 25px 25px 35px 25px;
+    }
+
+    .R-btn {
+        font-size: 3.5vw;
+    }
+
+    /*.course-bg1 {
+        background-image: url(../img/main-03.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        height: 800px;
+    }
+
+    .course-bg2 {
+        background-image: url(../img/main-04.jpg);
+        background-repeat: no-repeat;
+        background-position: left -20px;
+        background-size: cover;
+        height: 800px;
+    }*/
+}
+
 /* comment */
+.contain {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .form-control {
     background: transparent;
     border: none;
@@ -359,6 +458,11 @@ footer {
     list-style-type: none;
 }
 
+.comment-li {
+    display: block;
+    text-align: left;
+}
+
 .comment-avatar {
     float: left;
 }
@@ -401,7 +505,6 @@ footer {
 }
 
 
-
 @media (max-width: 600px) {
     .comment-r-info {
         border-bottom: 0px;
@@ -425,6 +528,7 @@ footer {
     .textbox {
         margin-left: 15px;
     }
+
 }
 
 /* html */
