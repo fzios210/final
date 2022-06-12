@@ -201,7 +201,7 @@ footer {
 
 .B-title {
     padding-bottom: 20px;
-    font-size: 2.2vw;
+    font-size: 1.5vw;
 }
 
 .B-title:hover {
@@ -220,7 +220,7 @@ footer {
 }
 
 .M-title {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     color: rgb(87, 133, 181);
 }
 
@@ -244,7 +244,7 @@ footer {
 
 .P-title {
     padding-bottom: 20px;
-    font-size: 2.2vw;
+    font-size: 1.5vw;
 }
 
 .P-title:hover {
@@ -313,11 +313,10 @@ footer {
 
 .feedback-row {
     width: 100%;
-    height: 100px;
 }
 
 .feedback {
-    height: 30%;
+    height: 140%;
 }
 
 .course-phone {
@@ -529,6 +528,20 @@ footer {
         margin-left: 15px;
     }
 
+}
+
+/* poster */
+
+.poster{
+    width: 20%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.poster:hover{
+    transform: scale(1.3,1.3);
+    transition: all 0.5s ease-out;
+    box-shadow: 0px 0px 5px rgba(102, 102, 102, 0.575);
 }
 
 /* html */
