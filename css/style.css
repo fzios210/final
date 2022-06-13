@@ -316,7 +316,7 @@ footer {
 }
 
 .feedback {
-    height: 140%;
+    height: 120%;
 }
 
 .course-phone {
@@ -530,16 +530,128 @@ footer {
 
 }
 
+/* windows */
+.name {
+    padding: 50px 50px;
+    background-image: url(../img/M-btn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 10px 0px;
+    color: #fd8787;
+}
+
+.windows-mySlides {
+    display: none;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 765px) {
+    .windows-mySlides {
+        width: 100%;
+    }
+}
+
+.modal1 {
+    display: none;
+    position: fixed;
+    z-index: 10009;
+    padding-top: 120px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(80, 80, 80, 0.6);
+}
+
+.modal-content1 {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column {
+    margin-top: 50px;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.close-light {
+    color: black;
+    position: absolute;
+    top: 70px;
+    right: 25%;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: #F2E0C8 0px 0px 4px;
+}
+
+.close-light:hover,
+.close-light:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.next {
+    position: absolute;
+    right: 20%;
+    border-radius: 3px 0 0 3px;
+    text-shadow: #F2E0C8 0px 0px 4px;
+}
+
+.prev {
+    position: absolute;
+    left: 20%;
+    border-radius: 3px 0 0 3px;
+    text-shadow: #F2E0C8 0px 0px 4px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 765px) {
+    .close-light {
+        right: 25px;
+    }
+
+    .next {
+        right: -5px;
+    }
+
+    .prev {
+        left: -5px;
+    }
+}
+
 /* poster */
 
-.poster{
+.poster {
     width: 20%;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-.poster:hover{
-    transform: scale(1.3,1.3);
+.poster:hover {
+    transform: scale(1.3, 1.3);
     transition: all 0.5s ease-out;
     box-shadow: 0px 0px 5px rgba(102, 102, 102, 0.575);
 }

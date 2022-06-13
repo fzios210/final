@@ -16,35 +16,6 @@
             background-size: contain;
             background-position: center top;
         }
-
-        .name {
-            padding: 50px 50px;
-            background-image: url(./img/M-btn.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-            margin: 10px 0px;
-            color: #fd8787;
-        }
-
-        .img-box {
-            display: none;
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.6);
-            align-items: center;
-            justify-content: center;
-        }
-
-        .closebtn {
-            position: absolute;
-            top: 100px;
-            right: 100px;
-            color: white;
-            font-size: 35px;
-            cursor: pointer;
-        }
     </style>
 </head>
 
@@ -96,44 +67,223 @@
                 <div class="col-lg-12 col-12" style="flex-direction: row;display: flex;justify-content: center;">
                     <div>
                         <a href="#" class="cp-a">
-                            <p class="name" onclick="myFunction('./img/course06/G1/01.jpg')">
+                            <p class="name" onclick="openModal('myModal1');currentSlidel1(1)">
                                 第一組：泰國水燈節
                             </p>
                         </a>
                         <a href="#" class="cp-a">
-                            <p class="name" onclick="myFunction('./img/course06/G2/01.jpg')">
+                            <p class="name" onclick="openModal('myModal2');currentSlidel2(1)">
                                 第二組：柬埔寨過年
                             </p>
                         </a>
                         <a href="#" class="cp-a">
-                            <p class="name" onclick="myFunction('./img/course06/G3/01.jpg')">
+                            <p class="name" onclick="openModal('myModal3');currentSlidel3(1)">
                                 第三組：越南盂蘭盆節
                             </p>
-                        </a>                        
+                        </a>
                     </div>
                     <div style="margin-top:50px;margin-left: 80px;">
                         <a href="#" class="cp-a">
-                            <p class="name" onclick="myFunction('./img/course06/G4/01.jpg')">
+                            <p class="name" onclick="openModal('myModal4');currentSlidel4(1)">
                                 第四組：泰國鬼面節
                             </p>
                         </a>
                         <a href="#" class="cp-a">
-                            <p class="name" onclick="myFunction('./img/course06/G5/01.jpg')">
+                            <p class="name" onclick="openModal('myModal5');currentSlidel5(1)">
                                 第五組：泰國<b><span style="font-family: 微軟正黑體;">潑</span></b>水節
                             </p>
                         </a>
                         <a href="#" class="cp-a">
-                            <p class="name" onclick="myFunction('./img/course06/G6/01.jpg')">
+                            <p class="name" onclick="openModal('myModal6');currentSlidel6(1)">
                                 第六組：越南餓鬼節
                             </p>
                         </a>
                     </div>
                 </div>
+            </div>
+            <div id="myModal1" class="modal1">
+                <span class="close-light cursor" onclick="closeModal('myModal1')">&times;</span>
+                <div class="modal-content1">
+
+                    <img src="./img/course06/G1/01.jpg" class="windows-mySlides mySlides1">
+                    <img src="./img/course06/G1/02.jpg" class="windows-mySlides mySlides1">
+                    <img src="./img/course06/G1/03.jpg" class="windows-mySlides mySlides1">
+                    <img src="./img/course06/G1/04.jpg" class="windows-mySlides mySlides1">
+                    <img src="./img/course06/G1/05.jpg" class="windows-mySlides mySlides1">
+                    <img src="./img/course06/G1/06.jpg" class="windows-mySlides mySlides1">
+                    <embed src="./img/course06/G1/G1.pdf" class="windows-mySlides mySlides1" style="height: 550px;">
+                    <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+                    <div class="column">
+                        <img class="demo demo1 cursor" src="./img/course06/G1/01.jpg" style="width:100px"
+                            onclick="currentSlide1(1)">
+                        <img class="demo demo1 cursor" src="./img/course06/G1/02.jpg" style="width:100px"
+                            onclick="currentSlide1(2)">
+                        <img class="demo demo1 cursor" src="./img/course06/G1/03.jpg" style="width:100px"
+                            onclick="currentSlide1(3)">
+                        <img class="demo demo1 cursor" src="./img/course06/G1/04.jpg" style="width:100px"
+                            onclick="currentSlide1(4)">
+                        <img class="demo demo1 cursor" src="./img/course06/G1/05.jpg" style="width:100px"
+                            onclick="currentSlide1(5)">
+                        <img class="demo demo1 cursor" src="./img/course06/G1/06.jpg" style="width:100px"
+                            onclick="currentSlide1(6)">
+                        <img class="demo demo1 cursor" src="./img/course06/G1/06.jpg" style="width:100px"
+                            onclick="currentSlide1(7)">
+                    </div>
+
                 </div>
-                <div class="img-box">
-                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                    <img id="expandedImg" style="width:65%">
+            </div>
+            <div id="myModal2" class="modal1">
+                <span class="close-light cursor" onclick="closeModal('myModal2')">&times;</span>
+                <div class="modal-content1">
+
+                    <img src="./img/course06/G2/01.jpg" class="windows-mySlides mySlides2">
+                    <img src="./img/course06/G2/02.jpg" class="windows-mySlides mySlides2">
+                    <img src="./img/course06/G2/03.jpg" class="windows-mySlides mySlides2">
+                    <img src="./img/course06/G2/04.jpg" class="windows-mySlides mySlides2">
+                    <img src="./img/course06/G2/05.jpg" class="windows-mySlides mySlides2">
+                    <img src="./img/course06/G2/06.jpg" class="windows-mySlides mySlides2">
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+                    <div class="column">
+                        <img class="demo demo2 cursor" src="./img/course06/G2/01.jpg" style="width:100px"
+                            onclick="currentSlide2(1)">
+                        <img class="demo demo2 cursor" src="./img/course06/G2/02.jpg" style="width:100px"
+                            onclick="currentSlide2(2)">
+                        <img class="demo demo12 cursor" src="./img/course06/G2/03.jpg" style="width:100px"
+                            onclick="currentSlide2(3)">
+                        <img class="demo demo2 cursor" src="./img/course06/G2/04.jpg" style="width:100px"
+                            onclick="currentSlide2(4)">
+                        <img class="demo demo2 cursor" src="./img/course06/G2/05.jpg" style="width:100px"
+                            onclick="currentSlide2(5)">
+                        <img class="demo demo2 cursor" src="./img/course06/G2/06.jpg" style="width:100px"
+                            onclick="currentSlide2(6)">
+                    </div>
+
                 </div>
+            </div>
+            <div id="myModal3" class="modal1">
+                <span class="close-light cursor" onclick="closeModal('myModal3')">&times;</span>
+                <div class="modal-content1">
+
+                    <img src="./img/course06/G3/01.jpg" class="windows-mySlides mySlides3">
+                    <img src="./img/course06/G3/02.jpg" class="windows-mySlides mySlides3">
+                    <img src="./img/course06/G3/03.jpg" class="windows-mySlides mySlides3">
+                    <img src="./img/course06/G3/04.jpg" class="windows-mySlides mySlides3">
+                    <img src="./img/course06/G3/05.jpg" class="windows-mySlides mySlides3">
+                    <img src="./img/course06/G3/06.jpg" class="windows-mySlides mySlides3">
+                    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+
+                    <div class="column">
+                        <img class="demo demo3 cursor" src="./img/course06/G3/01.jpg" style="width:100px"
+                            onclick="currentSlide3(1)">
+                        <img class="demo demo3 cursor" src="./img/course06/G3/02.jpg" style="width:100px"
+                            onclick="currentSlide3(2)">
+                        <img class="demo demo3 cursor" src="./img/course06/G3/03.jpg" style="width:100px"
+                            onclick="currentSlide3(3)">
+                        <img class="demo demo3 cursor" src="./img/course06/G3/04.jpg" style="width:100px"
+                            onclick="currentSlide3(4)">
+                        <img class="demo demo3 cursor" src="./img/course06/G3/05.jpg" style="width:100px"
+                            onclick="currentSlide3(5)">
+                        <img class="demo demo3 cursor" src="./img/course06/G3/06.jpg" style="width:100px"
+                            onclick="currentSlide3(6)">
+                    </div>
+
+                </div>
+            </div>
+            <div id="myModal4" class="modal1">
+                <span class="close-light cursor" onclick="closeModal('myModal4')">&times;</span>
+                <div class="modal-content1">
+
+                    <img src="./img/course06/G4/01.jpg" class="windows-mySlides mySlides4">
+                    <img src="./img/course06/G4/02.jpg" class="windows-mySlides mySlides4">
+                    <img src="./img/course06/G4/03.jpg" class="windows-mySlides mySlides4">
+                    <img src="./img/course06/G4/04.jpg" class="windows-mySlides mySlides4">
+                    <img src="./img/course06/G4/05.jpg" class="windows-mySlides mySlides4">
+                    <img src="./img/course06/G4/06.jpg" class="windows-mySlides mySlides4">
+                    <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+
+                    <div class="column">
+                        <img class="demo demo4 cursor" src="./img/course06/G4/01.jpg" style="width:100px"
+                            onclick="currentSlide4(1)">
+                        <img class="demo demo4 cursor" src="./img/course06/G4/02.jpg" style="width:100px"
+                            onclick="currentSlide4(2)">
+                        <img class="demo demo4 cursor" src="./img/course06/G4/03.jpg" style="width:100px"
+                            onclick="currentSlide4(3)">
+                        <img class="demo demo4 cursor" src="./img/course06/G4/04.jpg" style="width:100px"
+                            onclick="currentSlide4(4)">
+                        <img class="demo demo4 cursor" src="./img/course06/G4/05.jpg" style="width:100px"
+                            onclick="currentSlide4(5)">
+                        <img class="demo demo4 cursor" src="./img/course06/G4/06.jpg" style="width:100px"
+                            onclick="currentSlide4(6)">
+                    </div>
+
+                </div>
+            </div>
+            <div id="myModal5" class="modal1">
+                <span class="close-light cursor" onclick="closeModal('myModal5')">&times;</span>
+                <div class="modal-content1">
+
+                    <img src="./img/course06/G5/01.jpg" class="windows-mySlides mySlides5">
+                    <img src="./img/course06/G5/02.jpg" class="windows-mySlides mySlides5">
+                    <img src="./img/course06/G5/03.jpg" class="windows-mySlides mySlides5">
+                    <img src="./img/course06/G5/04.jpg" class="windows-mySlides mySlides5">
+                    <img src="./img/course06/G5/05.jpg" class="windows-mySlides mySlides5">
+                    <img src="./img/course06/G5/06.jpg" class="windows-mySlides mySlides5">
+                    <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides5(1)">&#10095;</a>
+
+                    <div class="column">
+                        <img class="demo demo5 cursor" src="./img/course06/G5/01.jpg" style="width:100px"
+                            onclick="currentSlide5(1)">
+                        <img class="demo demo5 cursor" src="./img/course06/G5/02.jpg" style="width:100px"
+                            onclick="currentSlide5(2)">
+                        <img class="demo demo5 cursor" src="./img/course06/G5/03.jpg" style="width:100px"
+                            onclick="currentSlide5(3)">
+                        <img class="demo demo5 cursor" src="./img/course06/G5/04.jpg" style="width:100px"
+                            onclick="currentSlide5(4)">
+                        <img class="demo demo5 cursor" src="./img/course06/G5/05.jpg" style="width:100px"
+                            onclick="currentSlide5(5)">
+                        <img class="demo demo5 cursor" src="./img/course06/G5/06.jpg" style="width:100px"
+                            onclick="currentSlide5(6)">
+                    </div>
+
+                </div>
+            </div>
+            <div id="myModal6" class="modal1">
+                <span class="close-light cursor" onclick="closeModal('myModal6')">&times;</span>
+                <div class="modal-content1">
+
+                    <img src="./img/course06/G6/01.jpg" class="windows-mySlides mySlides6">
+                    <img src="./img/course06/G6/02.jpg" class="windows-mySlides mySlides6">
+                    <img src="./img/course06/G6/03.jpg" class="windows-mySlides mySlides6">
+                    <img src="./img/course06/G6/04.jpg" class="windows-mySlides mySlides6">
+                    <img src="./img/course06/G6/05.jpg" class="windows-mySlides mySlides6">
+                    <img src="./img/course06/G6/06.jpg" class="windows-mySlides mySlides6">
+                    <a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides6(1)">&#10095;</a>
+
+                    <div class="column">
+                        <img class="demo demo6 cursor" src="./img/course06/G6/01.jpg" style="width:100px"
+                            onclick="currentSlide6(1)">
+                        <img class="demo demo6 cursor" src="./img/course06/G6/02.jpg" style="width:100px"
+                            onclick="currentSlide6(2)">
+                        <img class="demo demo6 cursor" src="./img/course06/G6/03.jpg" style="width:100px"
+                            onclick="currentSlide6(3)">
+                        <img class="demo demo6 cursor" src="./img/course06/G6/04.jpg" style="width:100px"
+                            onclick="currentSlide6(4)">
+                        <img class="demo demo6 cursor" src="./img/course06/G6/05.jpg" style="width:100px"
+                            onclick="currentSlide6(5)">
+                        <img class="demo demo6 cursor" src="./img/course06/G6/06.jpg" style="width:100px"
+                            onclick="currentSlide6(6)">
+                    </div>
+
+                </div>
+            </div>
         </main>
         <footer>
             <img src="img/logo_w.png" style="height: 50px;" alt="">
@@ -146,13 +296,7 @@
             <b><span style="position: absolute; right: 50px; top: 30px;">手機請橫放點閱</span></b>
         </footer>
     </div>
-    <script>
-        function myFunction(imgs) {
-            var expandImg = document.getElementById("expandedImg");
-            expandImg.src = imgs;
-            expandImg.parentElement.style.display = "flex";
-        }
-    </script>
+    <script src="./js/lightbox.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap-4.3.1.js"></script>
 </body>
