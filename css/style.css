@@ -642,6 +642,13 @@ footer {
     }
 }
 
+/* read */
+
+.read-pdf{
+    width: 60%;
+    height: 650px;
+}
+
 /* poster */
 
 .poster {
