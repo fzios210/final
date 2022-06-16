@@ -473,8 +473,10 @@ footer b span {
     height: 400px;
     color: #5A8BBF;
     overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .comment-area::-webkit-scrollbar {
@@ -662,6 +664,31 @@ footer b span {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+#car {
+    width: 50vw;
+}
+
+.img-box {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 20;
+}
+
+.closebtn {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 765px) {
     .close-light {
         right: 25px;
@@ -701,6 +728,10 @@ footer b span {
     .poster {
         width: 40%;
         margin: 50px 0px;
+    }
+
+    #car {
+        width: 75vw;
     }
 }
 

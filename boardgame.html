@@ -28,30 +28,6 @@
             cursor: pointer;
         }
 
-        .img-box {
-            display: none;
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.6);
-            align-items: center;
-            justify-content: center;
-            top: 0;
-        }
-
-        .closebtn {
-            position: absolute;
-            top: 100px;
-            right: 100px;
-            color: white;
-            font-size: 35px;
-            cursor: pointer;
-        }
-
-        .col-12:nth-last-child(2) {
-            margin-top: 50px;
-        }
-
         @media (max-width: 1200px) {
             body {
                 background-size: cover;
@@ -61,10 +37,6 @@
             main {
                 justify-content: flex-start;
                 padding: 120px 0;
-            }
-
-            .col-12:nth-last-child(2) {
-                margin-top: -50px;
             }
         }
     </style>
@@ -116,48 +88,78 @@
                             style="padding: 25px 30px 30px 30px;background-color: #f9a5a5;border-radius: 30px;height: 250px;">
                             理念：</p>-->
                 </div>
-                <div class="col-12" style="flex-direction: row;display: flex;justify-content: center;">
-                    <div class="row" style="width: 100vw;">
-                        <div class="col-lg-4"></div>
-                        <div class="col-lg-2 col-12">
-                            <p class="name" onclick="myFunction('./img/course05/boardgame/01.jpg')">
-                                107111223&nbsp&nbsp吳欣<b><span style="font-family: 微軟正黑體;">蓓</span></b>
-                            </p>
-                            <p class="name" onclick="myFunction('./img/course05/boardgame/02.jpg')">
-                                107111229&nbsp&nbsp王如瑩
-                            </p>
-                            <p class="name" onclick="myFunction('./img/course05/boardgame/03.jpg')">
-                                107111205&nbsp&nbsp魏君蘋
-                            </p>
-                            <p class="name" onclick="myFunction('./img/course05/boardgame/04.jpg')">
-                                108111147&nbsp&nbsp賴豪南
-                            </p>
-                            <p class="name" onclick="myFunction('./img/course05/boardgame/05.jpg')">
-                                106103259&nbsp&nbsp蕭惇祐
-                            </p>
-                        </div>
-                        <div class="col-lg-2 col-12">
-                            <p class="name" onclick="myFunction('./img/course05/boardgame/06.jpg')">
-                                106109109&nbsp&nbsp廖秉豪
-                            </p>
-                            <p class="name" onclick="myFunction('./img/course05/boardgame/07.jpg')">
-                                108110147&nbsp&nbsp莊鎧瑜
-                            </p>
-                            <p class="name" onclick="myFunction('./img/course05/boardgame/08.jpg')">
-                                108110208&nbsp&nbsp蔡蕙<b><span style="font-family: 微軟正黑體;">珺</span></b>
-                            </p>
-                            <p class="name" onclick="myFunction('./img/course05/boardgame/09.jpg')">
-                                108110101&nbsp&nbsp王鈺軒
-                            </p>
-                        </div>
-                        <div class="col-lg-4"></div>
-                    </div>
 
+                <div class="col-12" style="display: flex;justify-content: center;">
+                    <div id="car" class="carousel slide" data-ride="carousel" data-aos="fade-down"
+                        data-aos-duration="1300">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#car" data-slide-to="0" class="active"></li>
+                            <li data-target="#car" data-slide-to="1"></li>
+                            <li data-target="#car" data-slide-to="2"></li>
+                            <li data-target="#car" data-slide-to="3"></li>
+                            <li data-target="#car" data-slide-to="4"></li>
+                            <li data-target="#car" data-slide-to="5"></li>
+                            <li data-target="#car" data-slide-to="6"></li>
+                            <li data-target="#car" data-slide-to="7"></li>
+                            <li data-target="#car" data-slide-to="8"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/course05/boardgame/01.jpg" width="100%"
+                                    onclick="myFunction('./img/course05/boardgame/01.jpg')">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/course05/boardgame/02.jpg" width="100%"
+                                    onclick="myFunction('./img/course05/boardgame/02.jpg')">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/course05/boardgame/03.jpg" width="100%"
+                                    onclick="myFunction('./img/course05/boardgame/03.jpg')">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/course05/boardgame/04.jpg" width="100%"
+                                    onclick="myFunction('./img/course05/boardgame/04.jpg')">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/course05/boardgame/05.jpg" width="100%"
+                                    onclick="myFunction('./img/course05/boardgame/05.jpg')">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/course05/boardgame/06.jpg" width="100%"
+                                    onclick="myFunction('./img/course05/boardgame/06.jpg')">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/course05/boardgame/07.jpg" width="100%"
+                                    onclick="myFunction('./img/course05/boardgame/07.jpg')">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/course05/boardgame/08.jpg" width="100%"
+                                    onclick="myFunction('./img/course05/boardgame/08.jpg')">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/course05/boardgame/09.jpg" width="100%"
+                                    onclick="myFunction('./img/course05/boardgame/09.jpg')">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#car" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#car" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
                 </div>
+
             </div>
             <div class="img-box">
                 <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <img id="expandedImg" style="width:65%">
+                <img id="expandedImg" style="width:65%;position: relative;z-index: 9999;">
             </div>
         </main>
         <footer>
