@@ -9,6 +9,42 @@
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap-4.3.1.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-image: url(img/cul-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center top;
+        }
+
+        .col-lg-5:nth-last-child(1) {
+            margin-top: 50px;
+        }
+
+
+
+        @media (min-width: 1920px) {
+            .row .row {
+                width: 50vw;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            body {
+                background-size: cover;
+                background-position: left bottom;
+            }
+
+            main {
+                justify-content: flex-start;
+                padding: 60px 0;
+            }
+
+            .col-lg-5:nth-last-child(1) {
+                margin-top: -30px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -66,27 +102,54 @@
                 </ul>
             </div>
         </nav>
-        <main style="font-size: 24px;" class="ge-bg">
+        <main style="font-size: 24px;">
+            <div class="row" style="width:100vw;">
+                <div class="col-xl-12 col-12">
+                    <div style="width: 100%; height: 150px; background-image: url(./img/B-btn.png);background-repeat: no-repeat;background-size: contain;background-position: center;
+                    padding: 45px 30px 45px 30px;">
+                        <p style="font-size: larger;">新住民醫療平權 微電影展</p>
+                    </div>
+                </div>
+            </div>
             <div class="row course-row">
-                <div class="col-2"></div>
-                <div class="col-1 c-btn">
-                    <a href="#" class="c1-text">成果海報</a>
-                </div>
-                <div class="col-4 coursr04-btn">
-                    <a><span style="font-size:2vw;">全球化議題</span> <br>
-                        授課教師-劉明香老師</a>
-                </div>
-                <div class="col-1 c-btn">
-                    <li class="dropdown">
-                        <a class="nav-link dropdown-toggle c1-text" href="#" id="navbarDropdownMenuLink"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">課程活動</a>
-                        <div class="dropdown-menu p-bg" aria-labelledby="navbarDropdownMenuLink"
-                            style="left: 0;right: auto; font-size: 1vw;">
-                            <a class="dropdown-item cp-a" href="c4-read.html">悅讀心世界-全球化議題成果分享</a>
-                        </div>
-                    </li>
-                </div>
-                <div class="col-2"></div>
+                <div class="col-lg-2 col-0"></div>
+                <div class="col-lg-2 col-12"><iframe class="c2-video" src="https://www.youtube.com/embed/OeTVa6QNQO8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="col-lg-2 col-12"><iframe class="c2-video" src="https://www.youtube.com/embed/nBw-qUSpOzU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="col-lg-2 col-12"><iframe class="c2-video" src="https://www.youtube.com/embed/nBw-qUSpOzU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="col-lg-2 col-12"><iframe class="c2-video" src="https://www.youtube.com/embed/1S9FFD0zDoA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="col-lg-2 col-0"></div>
+            </div>
+            <div class="row course-row">
+                <div class="col-lg-2 col-0"></div>
+                <div class="col-lg-2 col-12"><iframe class="c2-video" src="https://www.youtube.com/embed/U2heGJkaJQc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="col-lg-2 col-12"><iframe class="c2-video" src="https://www.youtube.com/embed/cMCywF9ZgVM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="col-lg-2 col-12"><iframe class="c2-video" src="https://www.youtube.com/embed/tKO8F8EKBIo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="col-lg-2 col-12"><iframe class="c2-video" src="https://www.youtube.com/embed/UJpfVwY22O8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="col-lg-2 col-0"></div>
             </div>
         </main>
         <footer>
@@ -100,6 +163,7 @@
             <b><span>手機請橫放點閱</span></b>
         </footer>
     </div>
+    <script src="./js/lightbox.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap-4.3.1.js"></script>
 </body>
