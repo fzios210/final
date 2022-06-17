@@ -141,27 +141,27 @@ if (isset($_POST['decide'])) {
                                 <a class="dropdown-item cb-a" href="#">外婆家有事</a>
                                 <a class="dropdown-item cb-a" href="#">遠眺東南亞</a>
                                 <a class="dropdown-item cb-a" href="collab_01.html">協同教學：文化全球化與在地化</a>
-                                <a class="dropdown-item cb-a" href="#">協同教學：當西方遇見東方</a>
+                                <a class="dropdown-item cb-a" href="#">協同教學：當東方遇見西方</a>
                             </div>
                         </li>
                         <li class="dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">1101課程</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item cb-a" href="#">全球化議題</a>
-                            <a class="dropdown-item cb-a" href="#">休閒英文</a>
-                            <a class="dropdown-item cb-a" href="#">商品陳列</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">1102課程</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item cb-a" href="#">現當代小說選讀</a>
-                            <a class="dropdown-item cb-a" href="#"> 莊子</a>
-                            <a class="dropdown-item cb-a" href="#">醫療公共關係</a>
-                        </div>
-                    </li>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">1101課程</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item cb-a" href="course04.html">全球化議題</a>
+                                <a class="dropdown-item cb-a" href="course05.html">休閒英文</a>
+                                <a class="dropdown-item cb-a" href="course06.html">商品陳列</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">1102課程</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item cb-a" href="course01.html">現當代小說選讀</a>
+                                <a class="dropdown-item cb-a" href="course02.html"> 莊子</a>
+                                <a class="dropdown-item cb-a" href="course03.html">醫療公共關係</a>
+                            </div>
+                        </li>
                         <li><a class="nav-link" href="comment.php">留言板</a></li>
                         <li><a class="nav-link" href="http://gec-project.aeust.edu.tw/ge_web/index.html"
                                 target="_blank">計畫網頁</a></li>

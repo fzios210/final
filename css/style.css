@@ -5,7 +5,7 @@
 
 body {
     font-size: 20px;
-    font-family: 'TanukiMagic', '華康粗圓體', '微軟正黑體';
+    font-family: 'TanukiMagic',  '微軟正黑體', '華康粗圓體';
     text-align: center;
     color: #FFF;
     background-color: #81c4e2;
@@ -392,21 +392,6 @@ footer b span {
         font-size: 3.5vw;
     }
 
-    /*.course-bg1 {
-        background-image: url(../img/main-03.jpg);
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
-        height: 800px;
-    }
-
-    .course-bg2 {
-        background-image: url(../img/main-04.jpg);
-        background-repeat: no-repeat;
-        background-position: left -20px;
-        background-size: cover;
-        height: 800px;
-    }*/
 }
 
 /* comment */
@@ -716,12 +701,6 @@ footer b span {
     width: 20%;
     margin-left: 50px;
     margin-right: 50px;
-    transition: all 0.5s ease-out;
-}
-
-.poster:hover {
-    transform: scale(1.3, 1.3);
-    box-shadow: 0px 0px 5px rgba(102, 102, 102, 0.575);
 }
 
 @media screen and (max-width: 1200px) {
@@ -740,6 +719,122 @@ footer b span {
         width: 80%;
         margin: 50px 0px;
     }
+}
+
+/* course01 */
+
+.cul-bg {
+    background-image: url(../img/cul-course-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+.course-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coursr01-btn {
+    height: 200px;
+    background-image: url(../img/course01/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+.coursr02-btn {
+    height: 200px;
+    background-image: url(../img/course02/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+.coursr03-btn {
+    height: 200px;
+    background-image: url(../img/course03/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+.c-btn{
+    height: 200px;
+    background-image: url(../img/btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4vw;
+    
+}
+
+.c1-text{
+    color: #7F7F7F;
+}
+
+.c1-text:hover{
+    color: #7F7F7F;
+}
+
+.ge-bg{
+    background-image: url(../img/gender-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+.coursr04-btn {
+    height: 200px;
+    background-image: url(../img/course04/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+.coursr05-btn {
+    height: 200px;
+    background-image: url(../img/course05/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+.coursr06-btn {
+    height: 200px;
+    background-image: url(../img/course06/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
 }
 
 /* html */

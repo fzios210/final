@@ -9,42 +9,6 @@
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap-4.3.1.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            background-image: url(img/gender-bg.jpg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center top;
-        }
-
-        .col-lg-5:nth-last-child(1) {
-            margin-top: 50px;
-        }
-
-
-
-        @media (min-width: 1920px) {
-            .row .row {
-                width: 50vw;
-            }
-        }
-
-        @media (max-width: 1200px) {
-            body {
-                background-size: cover;
-                background-position: left bottom;
-            }
-
-            main {
-                justify-content: flex-start;
-                padding: 60px 0;
-            }
-
-            .col-lg-5:nth-last-child(1) {
-                margin-top: -30px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -102,51 +66,28 @@
                 </ul>
             </div>
         </nav>
-        <main style="font-size: 24px;">
-            <div class="row" style="width:100vw;">
-                <div class="col-xl-1"></div>
-                <div class="col-xl-4 col-12">
-                    <div style="width: 100%; height: 150px; background-image: url(./img/P-btn.png);background-repeat: no-repeat;background-size: contain;background-position: center;
-                    padding: 45px 30px 45px 30px;">
-                        <p style="font-size: larger;">包裝東南亞-東南亞節慶櫥窗設計展</p>
-                    </div>
-                    <p class="P-title" style="color: #fd8787;">成果影片:</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s0W1OyVR0r8"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+        <main style="font-size: 24px;" class="cul-bg">
+            <div class="row course-row">
+                <div class="col-2"></div>
+                <div class="col-1 c-btn">
+                    <a href="#" class="c1-text">成果海報</a>
                 </div>
-                <div class="col-xl-7 col-12" style="flex-direction: row;display: flex;justify-content: center;">
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-lg-5 col-12">
-                            <p class="name" onclick="open1('G1');currentSlidel(1)">
-                                第一組：泰國水燈節
-                            </p>
-                            <p class="name" onclick="open1('G2');currentSlidel(1)">
-                                第二組：柬埔寨過年
-                            </p>
-                            <p class="name" onclick="open1('G3');currentSlidel(1)">
-                                第三組：越南盂蘭盆節
-                            </p>
-                        </div>
-                        <div class="col-lg-0 col-1"></div>
-                        <div class="col-lg-5 col-12">
-                            <p class="name" onclick="open1('G4');currentSlidel(1)">
-                                第四組：泰國鬼面節
-                            </p>
-                            <p class="name" onclick="open1('G5');currentSlidel(1)">
-                                第五組：泰國<b><span style="font-family: 微軟正黑體;">潑</span></b>水節
-                            </p>
-                            <p class="name" onclick="open1('G6');currentSlidel(1)">
-                                第六組：越南餓鬼節
-                            </p>
-                        </div>
-                    </div>
+                <div class="col-4 coursr03-btn">
+                    <a><span style="font-size:2vw;">醫療公共關係</span><br>
+                        授課教師-黃芬芬老師</a>
                 </div>
+                <div class="col-1 c-btn">
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle c1-text" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">課程活動</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+                            style="left: 0;right: auto; font-size: 1vw;">
+                            <a class="dropdown-item cb-a" href="#">新住民醫療平權 微電影展</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="col-2"></div>
             </div>
-            <div id="mymodal" class="modal1"></div>
-
         </main>
         <footer>
             <img src="img/logo_w.png" style="height: 50px;" alt="">
@@ -159,7 +100,6 @@
             <b><span>手機請橫放點閱</span></b>
         </footer>
     </div>
-    <script src="./js/lightbox.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap-4.3.1.js"></script>
 </body>

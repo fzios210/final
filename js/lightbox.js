@@ -1,181 +1,54 @@
-/*---------0--------------*/
-function openModal(id) {
-    document.getElementById(id).style.display = "block";
+
+function open1(dir) {
+    var myModal = document.getElementById("mymodal");
+    myModal.style.display = "block";
+    myModal.innerHTML =
+        '<span class="close-light cursor" onclick="closeModal(\'mymodal\')">&times;</span>' +
+        '<div class="modal-content1">' +
+        '<img src="./img/course06/' + dir + '/01.jpg" class="windows-mySlides mySlides" style="display: block;">' +
+        '<img src="./img/course06/' + dir + '/02.jpg" class="windows-mySlides mySlides">' +
+        '<img src="./img/course06/' + dir + '/03.jpg" class="windows-mySlides mySlides">' +
+        '<img src="./img/course06/' + dir + '/04.jpg" class="windows-mySlides mySlides">' +
+        '<img src="./img/course06/' + dir + '/05.jpg" class="windows-mySlides mySlides">' +
+        '<img src="./img/course06/' + dir + '/06.jpg" class="windows-mySlides mySlides">' +
+        '<embed src="./img/course06/' + dir + '/' + dir + '.pdf" class="windows-mySlides mySlides" style="height: 550px;">' +
+        '<a class="prev" onclick="plusSlides(-1)">&#10094;</a>' +
+        '<a class="next" onclick="plusSlides(1)">&#10095;</a>' +
+        '<div class="column">' +
+        '<img class="demo demo1 cursor" src="./img/course06/' + dir + '/01.jpg" style="width:100px"onclick="currentSlide(1)">' +
+        '<img class="demo demo1 cursor" src="./img/course06/' + dir + '/02.jpg" style="width:100px"onclick="currentSlide(2)">' +
+        '<img class="demo demo1 cursor" src="./img/course06/' + dir + '/03.jpg" style="width:100px"onclick="currentSlide(3)">' +
+        '<img class="demo demo1 cursor" src="./img/course06/' + dir + '/04.jpg" style="width:100px"onclick="currentSlide(4)">' +
+        '<img class="demo demo1 cursor" src="./img/course06/' + dir + '/05.jpg" style="width:100px"onclick="currentSlide(5)">' +
+        '<img class="demo demo1 cursor" src="./img/course06/' + dir + '/06.jpg" style="width:100px"onclick="currentSlide(6)">' +
+        '<img class="demo demo1 cursor" src="./img/course06/' + dir + '/07.jpg" style="width:100px"onclick="currentSlide(7)">' +
+        '</div></div>';
 }
 
+
+
+/*---------0--------------*/
 function closeModal(id) {
     document.getElementById(id).style.display = "none";
 }
 
-/*---------1--------------*/
-
 var slideIndex = 1;
-showSlides1(slideIndex);
 
-function plusSlides1(n) {
-    showSlides1(slideIndex += n);
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-function currentSlide1(n) {
-    showSlides1(slideIndex = n);
+function currentSlide(n) {
+    showSlides(slideIndex = n);
 }
 
-function showSlides1(n) {
+function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("mySlides1");
+    var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("demo1");
     /*var captionText = document.getElementById("caption");*/
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    /*captionText.innerHTML = dots[slideIndex - 1].alt;*/
-}
-
-/*----------2------------*/
-
-var slideIndex = 1;
-showSlides2(slideIndex);
-
-function plusSlides2(n) {
-    showSlides2(slideIndex += n);
-}
-
-function currentSlide2(n) {
-    showSlides2(slideIndex = n);
-}
-
-function showSlides2(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides2");
-    var dots = document.getElementsByClassName("demo2");
-    /*var captionText = document.getElementById("caption1");*/
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    /*captionText.innerHTML = dots[slideIndex - 1].alt;*/
-}
-/*----------3------------*/
-
-var slideIndex = 1;
-showSlides3(slideIndex);
-
-function plusSlides3(n) {
-    showSlides3(slideIndex += n);
-}
-
-function currentSlide3(n) {
-    showSlides3(slideIndex = n);
-}
-
-function showSlides3(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides3");
-    var dots = document.getElementsByClassName("demo3");
-    /*var captionText = document.getElementById("caption1");*/
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    /*captionText.innerHTML = dots[slideIndex - 1].alt;*/
-}
-/*------------4----------*/
-
-var slideIndex = 1;
-showSlides4(slideIndex);
-
-function plusSlides4(n) {
-    showSlides4(slideIndex += n);
-}
-
-function currentSlide4(n) {
-    showSlides4(slideIndex = n);
-}
-
-function showSlides4(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides4");
-    var dots = document.getElementsByClassName("demo4");
-    /*var captionText = document.getElementById("caption1");*/
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    /*captionText.innerHTML = dots[slideIndex - 1].alt;*/
-}
-/*----------5------------*/
-
-var slideIndex = 1;
-showSlides5(slideIndex);
-
-function plusSlides5(n) {
-    showSlides5(slideIndex += n);
-}
-
-function currentSlide5(n) {
-    showSlides5(slideIndex = n);
-}
-
-function showSlides5(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides5");
-    var dots = document.getElementsByClassName("demo5");
-    /*var captionText = document.getElementById("caption1");*/
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    /*captionText.innerHTML = dots[slideIndex - 1].alt;*/
-}
-/*---------6-------------*/
-
-var slideIndex = 1;
-showSlides6(slideIndex);
-
-function plusSlides6(n) {
-    showSlides6(slideIndex += n);
-}
-
-function currentSlide6(n) {
-    showSlides6(slideIndex = n);
-}
-
-function showSlides6(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides6");
-    var dots = document.getElementsByClassName("demo6");
-    /*var captionText = document.getElementById("caption1");*/
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {

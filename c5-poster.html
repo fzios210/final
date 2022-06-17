@@ -28,6 +28,25 @@
             cursor: pointer;
         }
 
+        .img-box {
+            display: none;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 100px;
+            right: 500px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+
         @media (max-width: 1200px) {
             body {
                 background-size: cover;
@@ -36,7 +55,11 @@
 
             main {
                 justify-content: flex-start;
-                padding: 60px 0;
+                padding: 100px 0;
+            }
+
+            .col-12 {
+                flex-direction: column;
             }
         }
     </style>
@@ -98,86 +121,23 @@
             </div>
         </nav>
         <main style="font-size: 24px;">
-            <div class="row" style="width: 100vw;">
-                <div class="col-12" style="width: 100%; height: 150px; background-image: url(./img/P-btn.png);background-repeat: no-repeat;background-size: contain;background-position: center;
-                padding: 45px 30px 45px 30px;">
-                    <p style="font-size: larger;">藤球體驗活動</p>
+            <div class="row">
+                <div class="col-12" style="width: 100%; height: 130px; background-image: url(./img/P-btn.png);background-repeat: no-repeat;background-size: contain;background-position: center;
+                padding: 40px 30px 40px 30px;">
+                    <p style="font-size: larger;">成果海報</p>
                     <!--<p
                             style="padding: 25px 30px 30px 30px;background-color: #f9a5a5;border-radius: 30px;height: 250px;">
                             理念：</p>-->
                 </div>
-                <div class="col-12" style="display: flex;justify-content: center;">
-
-                    <div id="car" class="carousel slide" data-ride="carousel" data-aos="fade-down"
-                        data-aos-duration="1300">
-
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#car" data-slide-to="0" class="active"></li>
-                            <li data-target="#car" data-slide-to="1"></li>
-                            <li data-target="#car" data-slide-to="2"></li>
-                            <li data-target="#car" data-slide-to="3"></li>
-                            <li data-target="#car" data-slide-to="4"></li>
-                            <li data-target="#car" data-slide-to="5"></li>
-                            <li data-target="#car" data-slide-to="6"></li>
-                            <li data-target="#car" data-slide-to="7"></li>
-                            <li data-target="#car" data-slide-to="8"></li>
-                        </ul>
-
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/course05/sepakTakraw/01.jpg" width="100%"
-                                    onclick="myFunction('./img/course05/sepakTakraw/01.jpg')">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/course05/sepakTakraw/02.jpg" width="100%"
-                                    onclick="myFunction('./img/course05/sepakTakraw/02.jpg')">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/course05/sepakTakraw/03.jpg" width="100%"
-                                    onclick="myFunction('./img/course05/sepakTakraw/03.jpg')">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/course05/sepakTakraw/04.jpg" width="100%"
-                                    onclick="myFunction('./img/course05/sepakTakraw/04.jpg')">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/course05/sepakTakraw/05.jpg" width="100%"
-                                    onclick="myFunction('./img/course05/sepakTakraw/05.jpg')">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/course05/sepakTakraw/06.jpg" width="100%"
-                                    onclick="myFunction('./img/course05/sepakTakraw/06.jpg')">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/course05/sepakTakraw/07.jpg" width="100%"
-                                    onclick="myFunction('./img/course05/sepakTakraw/07.jpg')">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/course05/sepakTakraw/08.jpg" width="100%"
-                                    onclick="myFunction('./img/course05/sepakTakraw/08.jpg')">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/course05/sepakTakraw/09.jpg" width="100%"
-                                    onclick="myFunction('./img/course05/sepakTakraw/09.jpg')">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#car" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#car" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-                    </div>
-
+                <div class="col-12" style="display: flex;justify-content: center;align-items: center;">
+                    <img src="img/course05/en_poster/01.jpg" alt="" class="poster" onclick="myFunction('./img/course05/en_poster/01.jpg')">
+                    <img src="img/course05/en_poster/02.jpg" alt="" class="poster" onclick="myFunction('./img/course05/en_poster/02.jpg')">
                 </div>
-                <div class="img-box">
-                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                    <img id="expandedImg" style="width:65%">
-                </div>
+            </div>
+            <div class="img-box">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:30%;position: relative;z-index: 9999;">
+            </div>
         </main>
         <footer>
             <img src="img/logo_w.png" style="height: 50px;" alt="">
