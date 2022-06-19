@@ -562,6 +562,17 @@ footer b span {
     cursor: pointer;
 }
 
+.name-b {
+    padding: 50px 50px;
+    background-image: url(../img/M-btn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 30px 0px;
+    color: #5A8BBF;
+    cursor: pointer;
+}
+
 .windows-mySlides {
     display: none;
     width: 40%;
@@ -839,6 +850,15 @@ footer b span {
 
 .c2-video{
     height: 250px;
+}
+
+/* p-video */
+
+.p-video{
+    width:650px;
+    height: 365px;
+    margin: 50px 15px 15px 15px;
+
 }
 
 /* html */

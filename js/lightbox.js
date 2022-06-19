@@ -11,7 +11,7 @@ function open1(dir) {
         '<img src="./img/course06/' + dir + '/04.jpg" class="windows-mySlides mySlides">' +
         '<img src="./img/course06/' + dir + '/05.jpg" class="windows-mySlides mySlides">' +
         '<img src="./img/course06/' + dir + '/06.jpg" class="windows-mySlides mySlides">' +
-        '<embed src="./img/course06/' + dir + '/' + dir + '.pdf" class="windows-mySlides mySlides" style="height: 550px;">' +
+        '<embed src="./img/course06/' + dir + '/' + dir + '.pdf" class="windows-mySlides mySlides" style="height: 600px;">' +
         '<a class="prev" onclick="plusSlides(-1)">&#10094;</a>' +
         '<a class="next" onclick="plusSlides(1)">&#10095;</a>' +
         '<div class="column">' +
@@ -25,6 +25,19 @@ function open1(dir) {
         '</div></div>';
 }
 
+function open2(dir) {
+    var myModal = document.getElementById("mymodal");
+    myModal.style.display = "block";
+    myModal.innerHTML =
+        '<span class="close-light cursor" onclick="closeModal(\'mymodal\')">&times;</span>' +
+        '<div class="modal-content1">' +
+        '<embed src="./img/course01/' + dir + '/' + dir + '.pdf" class="windows-mySlides mySlides" style="display: block;height: 600px;">' +
+        '<a class="prev" onclick="plusSlides(-1)">&#10094;</a>' +
+        '<a class="next" onclick="plusSlides(1)">&#10095;</a>' +
+        '<div class="column">' +
+        '<img class="demo demo1 cursor" src="./img/course01/' + dir + '/01.jpg" style="width:100px"onclick="currentSlide(1)">' +
+        '</div></div>';
+}
 
 
 /*---------0--------------*/
