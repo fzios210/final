@@ -176,11 +176,15 @@ footer b span {
 }
 
 .cb-a:hover {
-    color: rgb(37, 79, 124);
+    color: #254f7c;
 }
 
 .cm-a {
-    color: rgb(87, 133, 181);
+    color: #5785b5;
+}
+
+.cm-a:link{
+    color: #5785b5;
 }
 
 .cm-a:hover {
