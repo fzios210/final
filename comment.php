@@ -168,7 +168,7 @@ if (isset($_POST['decide'])) {
                 </ul>
             </div>
         </nav>
-        <main style="margin: 150px 0px;">
+        <main style="margin: 140px 0px;">
             <form id="paper" method="post" action="">
                     <input type="hidden" id="decide" name="decide" value="<?php echo $_SESSION['decide']; ?>">
                     <div class="tw-respond-info">
@@ -187,6 +187,7 @@ if (isset($_POST['decide'])) {
                         
                     </div>
             </form>
+            <p style="padding: 10px 0px;color: #5A8BBF;">現在留言就有機會抽出一名幸運兒，獲得神秘小禮物！</p>
                 <h2 style="margin-top:10px; padding: 0 15px; text-align:center; color:#5A8BBF;">
                                 <?php
                                 $sql = "SELECT COUNT(*) FROM comment";
