@@ -483,7 +483,7 @@ footer b span {
 }
 
 .comment-avatar {
-    float: left;
+    float: left;    
 }
 
 .comment-avatar span {
@@ -492,6 +492,11 @@ footer b span {
     width: 55px;
     font-size: 28px;
     text-align: center;
+    font-weight: 700;
+    border: 2px #5785b5 solid;
+    border-radius: 10px;
+    padding-top: 3px;
+    margin: 10px;
 }
 
 .comment-right {
